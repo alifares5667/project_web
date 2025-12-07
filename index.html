@@ -13,12 +13,11 @@
 </head>
 
 <body>
-    <!-- Mobile Menu Toggle -->
+   
     <button class="mobile-menu-toggle" id="mobileMenuToggle">
         <i class="fas fa-bars"></i>
     </button>
-
-    <!-- Navigation -->
+    
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo" onclick="navigateToPage('home')">
@@ -47,7 +46,7 @@
         </div>
     </nav>
 
-    <!-- Home Page -->
+ 
     <div id="homePage" class="page active">
              <section class="hero">
             <div class="hero-video-container">
@@ -68,7 +67,7 @@
             </div>
         </section>
       
-        <!-- Brand Marquee -->
+       
         <section class="brand-marquee">
             <div class="marquee-content">
                 <span>NIKE</span>
@@ -84,7 +83,7 @@
             </div>
         </section>
 
-        <!-- Featured Products -->
+      
         <section class="featured-section">
             <div class="container">
                 <h2 class="section-title">FEATURED SNEAKERS</h2>
@@ -92,7 +91,7 @@
             </div>
         </section>
 
-        <!-- Shop By Category -->
+       
         <section class="category-section">
             <div class="container">
                 <h2 class="section-title">SHOP BY CATEGORY</h2>
@@ -141,7 +140,6 @@
             </div>
         </section>
 
-        <!-- Stats Section -->
         <section class="stats-section">
             <div class="container">
                 <div class="stats-grid">
@@ -170,7 +168,6 @@
         </section>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -212,7 +209,6 @@
         </div>
     </footer>
 
-    <!-- Product Detail Popup -->
     <div class="popup-overlay" id="productPopup">
         <div class="popup-content product-popup">
             <button class="popup-close" onclick="closeProductPopup()">
@@ -273,7 +269,6 @@
                         ADD TO CART
                     </button>
 
-                    <!-- Reviews Section -->
                     <div class="product-reviews">
                         <h4>CUSTOMER REVIEWS</h4>
                         <div class="reviews-container" id="reviewsContainer"></div>
@@ -302,7 +297,6 @@
         </div>
     </div>
 
-    <!-- Cart Popup -->
     <div class="popup-overlay" id="cartPopup">
         <div class="popup-content cart-popup">
             <div class="cart-header">
@@ -332,7 +326,6 @@
         </div>
     </div>
 
-    <!-- Checkout Popup -->
     <div class="popup-overlay" id="checkoutPopup">
         <div class="popup-content checkout-popup">
             <button class="popup-close" onclick="closeCheckout()">
@@ -420,14 +413,12 @@
         </div>
     </div>
 
-    <!-- Login/Signup Popup -->
     <div class="popup-overlay" id="authPopup">
         <div class="popup-content auth-popup">
             <button class="popup-close" onclick="closeAuth()">
                 <i class="fas fa-times"></i>
             </button>
 
-            <!-- Login Form -->
             <div class="auth-form" id="loginForm">
                 <h2>WELCOME BACK</h2>
                 <p class="auth-subtitle">Sign in to your account</p>
@@ -459,7 +450,6 @@
                 </p>
             </div>
 
-            <!-- Signup Form -->
             <div class="auth-form" id="signupForm" style="display: none;">
                 <h2>JOIN SNEAKVERSE</h2>
                 <p class="auth-subtitle">Create your account</p>
@@ -504,7 +494,6 @@
         </div>
     </div>
 
-    <!-- User Menu Dropdown -->
     <div class="user-menu" id="userMenu">
         <div class="user-info">
             <i class="fas fa-user-circle"></i>
@@ -520,7 +509,6 @@
         </button>
     </div>
 
-    <!-- Search Popup -->
     <div class="popup-overlay" id="searchPopup">
         <div class="popup-content search-popup">
             <button class="popup-close" onclick="closeSearch()">
@@ -536,10 +524,8 @@
         </div>
     </div>
 
-    <!-- Toast Notification Container -->
     <div id="toastContainer" class="toast-container"></div>
 
-    <!-- Loading Overlay -->
     <div id="loadingOverlay" class="loading-overlay">
         <div class="loading-spinner">
             <i class="fas fa-bolt"></i>
@@ -551,4 +537,5 @@
 
 
 </html>
+
 
