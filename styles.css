@@ -1179,13 +1179,65 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
 }
 
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    background: var(--black);
+    border: 2px solid var(--gray);
+    color: var(--white);
+    padding: 0.8rem;
+    border-radius: 50px;
+    font-family: 'Rajdhana', sans-serif;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.newsletter-form button {
+    background: var(--primary);
+    border: none;
+    color: var(--white);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.newsletter-form button:hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.newsletter-success {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+    color: #00ff00;
+    font-weight: 600;
+}
+
+.newsletter-success.active {
+    display: flex;
+}
+
+.newsletter-success i {
+    font-size: 1.2rem;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid var(--gray);
     color: var(--light-gray);
 }
-
 /* Popups */
 .popup-overlay {
     position: fixed;
@@ -3126,6 +3178,7 @@ h1, h2, h3, h4, h5, h6 {
         max-height: 90vh;
     }
 }
+
 
 
 
