@@ -544,16 +544,27 @@ function setupEventListeners() {
         });
     }
 
-    // Navigation
+     // Navigation
     document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const page = e.target.dataset.page;
-            navigateToPage(page);
-            // Close mobile menu
-            if (navMenu) navMenu.classList.remove('active');
-        });
-    });
+    link.addEventListener('click', (e) => {
+        // Allow normal navigation
+        if (!link.dataset.page) return;
+
+        e.preventDefault();
+
+        const routes = {
+            home: 'index.html',
+            shop: 'shop.html',
+            about: 'about.html',
+            contact: 'feedback.html',
+            account: 'account.html'
+        };
+
+        const page = link.dataset.page;
+        if (routes[page]) {
+            window.location.href = routes[page];
+        }
+    });;
 
     // Cart Button
     document.getElementById('cartBtn').addEventListener('click', openCart);
@@ -1770,4 +1781,5 @@ function updateCheckoutSummary() {
     
     document.getElementById('checkoutShipping').textContent = shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`;
     document.getElementById('checkoutTotal').textContent = `$${total.toFixed(2)}`;
+
 }
